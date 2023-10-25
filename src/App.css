@@ -2,100 +2,13 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
-.main-header {
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-.main-header .logo{
-  display: flex;
-  padding-left: 2vw;
-}
-.logo img {
-  max-width: 14vh; /* Set a maximum width for the logo */
-  height: auto; 
-}
-
-.main-header .header {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-.header p {
-  font-size: 27px;
-  margin: 0;
-  font-weight: bold;
-}
-
-.main-header .nav {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.nav {
-  display: flex;
-  gap: 20px;
-}
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.nav a:hover {
-  transform: translateY(-10px);
-  color: #50C878; /* Emerald Green */
-}
-/* styles.css */
-
-.right-nav {
-  display: flex;
-  align-items: center;
-}
-
-.right-nav button {
-  background-color: #50C878;
-  color: white;
-  padding: 15px 30px; /* Adjusted padding */
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: 0.3s ease;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-.right-nav i{
-  margin-right: 35px; 
-  cursor: pointer;
-}
-.right-nav i:hover{
-  cursor: pointer;
-}
-
-.right-nav button:hover {
-  background-color: #FFD700; /* Gold */
-  color: #002855; /* Royal Blue */
-}
-
 .container {
   position: relative;
   margin: 0 auto;
   text-align: center;
   background-color: black;
-}
-button{
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  cursor: pointer;
 }
 .hero {
   color: white;
@@ -150,91 +63,45 @@ button{
 }
 .overlay-text .p {
   padding-top:20vh;
+  padding-bottom: 5vh;
   font-size: 20px;
   margin: 0;
 }
-.overlay-text .hero-button{
-  cursor: pointer;
-  margin-top: 3vh;
-  margin-left: 0;
-}
+
 .overlay-text .filler-text {
-  padding-top: 30vh;
+  padding-top: 40vh;
 }
 
-.hero-button {
-  background-color: #50C878; /* Emerald Green */
-  color: white;
-  padding: 15px 30px; /* Adjusted padding */
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #FFD700; /* Gold */
-  color: #002855; /* Royal Blue */
-}
-
-.features {
+.features{
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 30px;
-  padding-top: 130vh;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  padding-bottom:68vh ;
+  padding-right: 68.8vw;
 }
-
-.feature {
+.contain{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+section{
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #50C878; /* Emerald Green */
-  color: white;
-  padding: 20px;
-  padding-top: 3vh;
+  align-items: center;
+  padding-top: 100vh;
+}
+h3 p{
+  font-size: 50px;
+  color: #111;
+  line-height: 60px;
   text-align: center;
-  border-radius: 10px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
-
-.feature h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.feature p {
-  font-size: 16px;
-}
-
-.feature:hover {
-  transform: translateY(-10px);
-}
-
-/* styles.css */
-
-footer {
-  background-color: #333; /* Dark Gray */
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 

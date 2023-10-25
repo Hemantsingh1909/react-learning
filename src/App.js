@@ -1,17 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Body from './components/Body';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <>
-    <Header/>
-    <Body/>
-    <Footer/>
-    </>
-  );
+    <div>
+      Application
+    </div>
+  )
 }
 
-export default App;
+export default App
+
