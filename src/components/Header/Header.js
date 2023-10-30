@@ -1,7 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../images/logo.png';
-import Card from '../Card'
-
+import { CustomButton } from '../CustomButton/CustomButton';
 function Header() {
   return (
     <header className="shadow sticky z-50 top-0 font-sans">
@@ -14,7 +13,7 @@ function Header() {
                     alt="Logo"
                 />
             </Link>
-            <div className="flex items-center lg:order-2">
+            <div className="flex items-center flex-around lg:order-2">
                 <Link
                     to="#"
                     className="text-white hover:bg-gray-50 hover:text-black focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-4 lg:px-5 py-2 lg:py-2.5 mr-3 focus:outline-none"
@@ -22,7 +21,7 @@ function Header() {
                     Log in
                 </Link>
                 <Link to="./about">
-                    <Card/>
+                <CustomButton variant="contained" label='Buy Pre-made Setup' />
                 </Link>
             </div>
             <div

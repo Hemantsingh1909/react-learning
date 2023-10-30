@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Banner from '../../images/hero-image.webp'
 import blur from '../../images/blur.svg'
-import Card from '../Card'
+import Features from '../Features/Features';
+import { CustomButton } from '../CustomButton/CustomButton';
+import Newsletter from '../NewsLetter/NewsLetteer';
 
 const Home = () => {
   return (
@@ -20,13 +22,17 @@ const Home = () => {
                 to="./about"
                 className=''
                 >
-                <Card/>
+                <CustomButton variant="contained" label='Buy Pre-made Setup' />
                 </Link>
                  </div>
-                <h1 className='text-[100px] pr-[4vw] mb-2.5 pt-[15vh] font-bold drop-shadow-md'>Where INDIA Does <span className='text-orange-700'>Trading</span></h1>
-            </div>
-    </div>
-    </>
+                <h1 className='text-[100px] pb-[20] pr-[4vw] mb-2.5 pt-[15vh] font-bold drop-shadow-md'>Where INDIA Does <span className='text-orange-700'>Trading</span></h1>
+                <Features/>
+                {/* <div className='absolute w-full pt-[200vh] text-[10px] pr-[13vw] pl-[13vw] font-bold drop-shadow-md'>
+                <Newsletter/>
+                </div> */}
+                </div>
+        </div>
+    </> 
   )
 }
 
